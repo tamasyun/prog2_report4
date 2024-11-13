@@ -54,28 +54,52 @@ public class Enemy {
         }
     }
 
+    /** nameを設定する
+     * @param name 設定したい名前
+     */
     public void setName(String name){
         this.name = name;
     }
+    /** hitPointを設定する
+     * @param hitPoint 設定したいHP
+     */
     public void setHitPoint(int hitPoint){
         this.hitPoint = hitPoint;
     }
+    /** attackを設定する
+     * @param attack 設定したい攻撃力
+     */
     public void setAttack(int attack){
         this.attack = attack;
     }
+    /** deadを設定する
+     * @param dead 設定したいdeadの状態
+     */
     public void setDead(boolean dead){
         this.dead = dead;
     }
 
+    /** nameを取得する
+     * @return 名前
+     */
     public String getName(){
         return this.name;
     }
+    /** hitPointを取得する
+     * @return HP
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
+    /** attackを取得する
+     * @return 攻撃力
+     */
     public int getAttack(){
         return this.attack;
     }
+    /** deadを取得する
+     * @return dead(true または false)
+     */
     public boolean getDead(){
         return this.dead;
     }

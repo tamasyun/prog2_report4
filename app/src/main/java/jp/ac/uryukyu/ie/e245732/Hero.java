@@ -2,10 +2,10 @@ package jp.ac.uryukyu.ie.e245732;
 
 /**
  * ヒーロークラス。
- *  String name; //敵の名前
- *  int hitPoint; //敵のHP
- *  int attack; //敵の攻撃力
- *  boolean dead; //敵の生死状態。true=死亡。
+ *  String name; //勇者の名前
+ *  int hitPoint; //勇者のHP
+ *  int attack; //勇者の攻撃力
+ *  boolean dead; //勇者の生死状態。true=死亡。
  * Created by tnal on 2016/11/13.
  */
 public class Hero {
@@ -54,28 +54,52 @@ public class Hero {
         }
     }
 
+    /** nameを設定する
+     * @param name 設定したい名前
+     */
     public void setName(String name){
         this.name = name;
     }
+    /** hitPointを設定する
+     * @param hitPoint 設定したいHP
+     */
     public void setHitPoint(int hitPoint){
         this.hitPoint = hitPoint;
     }
+    /** attackを設定する
+     * @param attack 設定したい攻撃力
+     */
     public void setAttack(int attack){
         this.attack = attack;
     }
+    /** deadを設定する
+     * @param dead 設定したいdeadの状態
+     */
     public void setDead(boolean dead){
         this.dead = dead;
     }
 
+    /** nameを取得する
+     * @return 名前
+     */
     public String getName(){
         return this.name;
     }
+    /** hitPointを取得する
+     * @return HP
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
+    /** attackを取得する
+     * @return 攻撃力
+     */
     public int getAttack(){
         return this.attack;
     }
+    /** deadを取得する
+     * @return dead(true または false)
+     */
     public boolean getDead(){
         return this.dead;
     }
